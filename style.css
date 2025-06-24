@@ -1,0 +1,65 @@
+body{
+  margin: o;
+  background-color: antiquewhite;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.logo{
+  margin-top: 10px;
+  background-color: #ffffff;
+  border-radius: 80% 60%;
+  margin-top: 10px;
+}
+.admin_login{
+  background-color: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+h2{
+  text-align: center;
+  font-family: cursive;
+}
+.admin_login input{
+   width: 100%;
+    padding: 12px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    font-size: 20px;
+    
+}
+input:focus{
+  outline: none;
+  border: 2px solid brown;
+}
+.admin_login button{
+  width: 100%;
+  padding: 8px;
+  margin: 13px ;
+  border-radius: 12px;
+  font-size: 18px;
+  border: none;
+  background-color: blue;
+}
+.social_icon{
+  margin-top: 40px;
+  display: inline-block;
+  
+}
+.social_icon .icon{
+  margin-left: 10px;
+  
+}

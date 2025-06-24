@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Verification</title>
+  <link rel="stylesheet" href="fee.css">
+  <link rel="icon" href="islamiyya.png">
+</head>
+<body>
+  <div class="verify">
+    <h2>Payment Validation</h2>
+    <p class="alert_message">Pls Enter Student Admission Number!!!</p>
+    <input type="number" class="admission_number" placeholder="Student Adm No." required>
+    <button class="paid">Verify payment</button>
+    <button class="logout" style="background-color: red;">Logout</button>
+  </div>
+    <p class="payment_status"></p>
+    <div class="social_icon">
+    <p style="margin-top: 10vh;">Contact Us: <strong>
+    <a href="https://wa.me/080699355424" class="icon"><img src="whatsapp.png" alt="" style="width: 29px;"></a>
+    <a href="https://web.facebook.com/suleiman.suleiman.930804/" class="icon"><img src="facebook.png" alt="" style="width: 29px;"></a>
+    <a href="https://t.me/@alfajr14287" class="icon"><img src="telegram.png" alt="" style="width: 29px;"></a>
+    </strong></p>
+    
+  </div>
+  <script src="student.js"></script>
+
+  <script>
+    const admission_number=document.querySelector('.admission_number');
+    const paid=document.querySelector('.paid');
+    const logout=document.querySelector('.logout');
+    const payment_status=document.querySelector('.payment_status');
+   
+    paid.addEventListener("click", (e)=>{
+      e.preventDefault()
+      let every_student=String(admission_number.value.trim())
+      let success_payment=admissionNumber.includes(every_student)
+      
+      if(every_student===""){
+        alert("Enter Student Admission Number⚠️⚠️")
+      }
+      if(success_payment){
+        
+        payment_status.innerHTML=`student with Adm No. <span style="color: red; font-size: 40px;">${every_student}</span> have REGISTERED✅✅✅`
+
+      }else{
+        payment_status.innerHTML=`Not REGISTERED❌❌❌`
+      }
+    })
+
+    logout.addEventListener("click",(k)=>{
+      k.preventDefault();
+       let every_student=String(admission_number.value.trim())
+      if(every_student===""){
+        alert("Do yo want to LogOut?")
+        window.location.href=`${index.html}`
+      }
+    })
+      
+  </script>
+
+
+</body>
+</html>

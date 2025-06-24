@@ -1,0 +1,76 @@
+body{
+  margin: o;
+  background-color: antiquewhite;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  
+}
+h2{
+  text-align: center;
+  margin-top: -7px;
+  margin-bottom: 50px;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  text-decoration: underline;
+  
+}
+.verify{
+  background-color: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+p{
+  color: red;
+  margin-left: -30px;
+  font-size: 20px;
+  text-decoration: solid;
+  font-family: cursive;
+  margin-top: -5px;
+}
+input{
+  width: 100%;
+    padding: 12px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    font-size: 20px;
+     
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+     margin: 0;
+     -webkit-appearance: none;
+}
+input:focus{
+  outline: none;
+  border: 2px solid green;
+}
+button{
+  width: 100%;
+    padding: 8px;
+    margin: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    font-size: 20px;
+    background-color: blue;
+}
+.payment_status{
+  margin-top: 25px;
+    text-align: center;
+    font-size: 16px;
+    color: blue;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 50%;
+}
