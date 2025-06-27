@@ -2,8 +2,8 @@ const admin_username=document.querySelector('.admin_username');
     const admin_password=document.querySelector('.admin_password');
     const admin_submit_button=document.querySelector('.admin_submit_button');
 
-    const user='alfajr';
-    const pass="14287man";
+    const user='hizbullah';
+    const pass="12345678";
 
     admin_submit_button.addEventListener("click", (e)=>{
       e.preventDefault()
